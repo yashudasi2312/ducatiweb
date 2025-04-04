@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Orbitron:wght@400..900&family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Saira:ital,wght@0,100..900;1,100..900&family=Zen+Dots&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book A Test Ride</title>
+
+    <link rel="stylesheet" href="testride-css.css">
+</head>
+<body>
+
+    <div class="opener">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Ducati_red_logo.PNG/1200px-Ducati_red_logo.PNG" alt="">
+        <div class="beg1">
+            <h1>Request a test ride</h1>
+        </div>
+        <div class="beg2">
+            <h1>Select the model you are interested in</h1>
+        </div>
+    </div>
+
+    <div class="form-container">
+        <div class="input-group">
+            <label for="first-name" ></label>
+            <!-- <input type="text" id="first-name" name="first-name" placeholder="NAME *"> -->
+            <select id="bike-model" name="bike-model">
+                <option value="" disabled selected>FAMILY *</option>
+                <option value="DesertX">DesertX</option>
+                <option value="Diavel">Diavel</option>
+                <option value="Hypermotard">Hypermotard</option>
+                <option value="Monster">Monster</option>
+                <option value="Multistrada">Multistrada</option>
+                <option value="Scrambler">Scrambler</option>
+                <option value="Streetfighter">Streetfighter</option>
+                <option value="XDiavel">XDiavel</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label for="last-name"></label>
+            <input type="text" id="last-name" name="last-name" placeholder="LAST NAME *">
+        </div>
+    </div>
+
+    <div class="form-container">
+        <div class="input-group">
+            <label for="zip" ></label>
+            <input type="text" name="" placeholder="ZIP/POSTAL CODE *">
+        </div>
+    </div>
+
+    <div class="form-container">
+        <div class="input-group">
+            <label for="cellphone" ></label>
+            <input type="text" id="cellphone" name="cellphone" placeholder="CELL PHONE *">
+        </div>
+        <div class="input-group">
+            <label for="eml"></label>
+            <input type="text" id="eml" name="eml" placeholder="E-MAIL *">
+        </div>
+    </div>
+
+    <div class="form-container">
+        <div class="input-group">
+            <label for="dealer" ></label>
+            <input type="text" name="" placeholder="NAME OF THE LOCATION OR DEALER YOU ARE LOOKING FOR *">
+        </div>
+    </div>
+
+    <div class="form-container">
+        <div class="input-group">
+            <label for="test-ride-date">Test Ride Date</label>
+            <input type="date" id="test-ride-date" name="test-ride-date">
+        </div>
+        <div class="input-group">
+            <label for="test-ride-time">TEST RIDE TIME</label>
+            <select id="test-ride-time" name="test-ride-time">
+                <option value="" disabled selected>Select Time</option>
+                <option value="morning">Morning</option>
+                <option value="afternoon">Afternoon</option>
+                <option value="evening">Evening</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="consent-container">
+        <h2>Consent for the processing of personal data</h2>
+        <p id="fin1">
+            Before proceeding, please read our <a href="#">privacy policy</a>.
+            I have read and understood the privacy notice and I hereby consent to the processing of my personal data by Ducati Motor Holding S.p.A.:
+        </p>
+        
+        <label class="checkbox-container" id="fin2">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            For marketing activities via email (newsletters), telephone, text and multimedia messages, chats, banners on our websites and apps, instant messaging, social networks, and conventional mail
+        </label>
+    
+        <label class="checkbox-container" id="fin3">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            To understand your preferences through automated individual decision-making activities and better serve you
+        </label>
+    </div>
+    
+    <div class="wayne">
+        <a href="#" class="button4">SEND</a>
+    </div>
+</body>
+</html>

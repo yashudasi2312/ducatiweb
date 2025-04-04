@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Orbitron:wght@400..900&family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Saira:ital,wght@0,100..900;1,100..900&family=Zen+Dots&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dealer Locator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Saira", sans-serif;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        .left {
+            width: 50%;
+            background: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .left h2 {
+            font-size: 1rem;
+            font-weight: 200;
+            margin-bottom: 10px;
+        }
+
+        .left p {
+            font-size: 2rem;
+            width: 30vw;
+            color: black;
+            margin-bottom: 20px;
+        }
+
+        .search-box {
+            width: 80%;
+            max-width: 400px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        .right {
+            width: 50%;
+        }
+
+        #map {
+            height: 100%;
+            width: 100%;
+        }
+
+.footer1{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding-top: 4%;
+    padding-bottom: 3%;
+    color: white;
+}
+
+.footer1 h1{
+    opacity: 0.5;
+}
+
+.df1{
+    font-size: 2.3rem;
+    font-weight: 900;
+}
+
+.df2{
+    font-size: 1.9rem;
+    font-weight: 200;
+    word-spacing: 3px;
+}
+
+.footer2 {
+    background-color: black;
+    display: flex;
+    gap: 60px; /* Adjust this value to control spacing */
+    justify-content: center; /* Centers the items */
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.footer2 a {
+    text-decoration: none;
+}
+
+.footer2 p {
+    padding: 0;
+    margin: 0; /* Remove default margins */
+    color: white;
+    opacity: 0.5;
+    font-size: 0.7rem;
+}
+
+.footer3{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 3%;
+    padding-left:  20%;
+    padding-right: 20%;
+}
+
+.footer3 p{
+    color: white;
+    opacity: 0.4;
+    font-size: 0.8rem;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+.footer4{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding-bottom: 80px;
+    gap: 20px;
+    padding-top: 50px;
+}
+
+.footer4 img{
+    opacity: 0.5;
+    height: 40px;
+}
+    </style>
+    <script>
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById("map"), {
+                center: { lat: 20.5937, lng: 78.9629 }, // India
+                zoom: 4,
+                mapTypeControl: true,
+                streetViewControl: true,
+                fullscreenControl: true
+            });
+        }
+    </script>
+</head>
+<body>
+    <div>
+    <div class="container">
+        <div class="left">
+            <h2>Dealer Locator</h2>
+            <p>Insert the name of the location or the dealer you are looking for</p>
+            <input type="text" class="search-box" placeholder="Search Dealer">
+        </div>
+        <div class="right">
+            <div id="map"></div>
+        </div>
+    </div>
+
+    <script async defer 
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOVYRIgupAurZup5y1PRh8Ismb1A3lLao&libraries=places&callback=initMap">
+    </script>
+    </div>
+
+    <section class="footer1">
+        <div class="flex">
+            <h1><span class="df1"><i>DUCATI </i></span> <span class="df2">|  Member of the Audi Group</span></h1>
+        </div>
+    </section>
+
+    <section class="footer2 , flex">
+        <a href="#">
+            <p>TERMS OF USE</p>
+        </a>
+        <a href="#">
+            <P>PRIVACY INFORMATION</P>
+        </a>
+        <a href="#">
+            <P>COOKIES INFORMATION</P>
+        </a>
+    </section>
+    
+    <section class="footer3 , flex">
+        <p>Copyright © 2023 Ducati Motor Holding S.p.A – A Sole Shareholder Company - A Company subject to the Management and Coordination activities of AUDI AG. All rights reserved. VAT 05113870967</p>
+    </section>
+
+    <section class="footer4">
+        <a href="#">
+            <img id = "f41" src="images1/twitter.png" alt="">
+        </a>
+        <a href="#">
+            <img id = "f42" src="images1/fb1.png" alt="">
+        </a>
+        <a href="#">
+            <img id = "f43" src="images1/free-vector-youtube-icon-logo-black-white_901408-456.png" alt="">
+        </a>
+        <a href="#">
+            <img id = "f44" src="images1/linkedin200.png" alt="">
+        </a>
+        <a href="#">
+            <img id = "f45" src="images1/insta2.png" alt="">
+        </a>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,284 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Saira", sans-serif;
+}
+
+.frontpage {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.p1 img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.p1text {
+    position: absolute;
+    top:40%;
+    right: 5%;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.p1text h1 {
+    font-size: 5.5rem;
+    font-weight: 600;
+}
+
+.p1text p {
+    font-size: 1.8rem;
+}
+
+.content {
+    width: 60vw;
+    text-align: left;
+    color: black;
+
+    margin-top: 10%;
+    margin-bottom: 20vh;
+
+    margin-left: 20vw;
+    margin-right: 20vw;
+
+}
+
+.content h1{
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+.content p{
+    opacity: 0.6;
+    font-size: 1.2rem;
+}
+
+strong{
+    font-weight: 500;
+}
+
+.black{
+    height: 100vh;
+    width: auto;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.black img{
+    height: auto;
+    width: 100vw;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 100vw;
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 10%;
+    padding: 20px;
+}
+
+.card {
+    width: 25%;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.card h2 {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.card hr {
+    border: none;
+    height: 1px;
+    background-color: black;
+    opacity: 0.7;
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 1rem;
+    color: black;
+    opacity: 0.6;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #777;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.footer1{
+    background-color: black;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.footer1 h1{
+    opacity: 0.5;
+}
+
+.df1{
+    font-size: 2.3rem;
+    font-weight: 900;
+}
+
+.df2{
+    font-size: 1.9rem;
+    font-weight: 200;
+    word-spacing: 3px;
+}
+
+.footer2 {
+    background-color: black;
+    display: flex;
+    gap: 60px; 
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.footer2 a {
+    text-decoration: none;
+}
+
+.footer2 p {
+    padding: 0;
+    margin: 0; 
+    color: white;
+    opacity: 0.5;
+    font-size: 0.7rem;
+}
+
+.footer3{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 3%;
+    padding-left:  20%;
+    padding-right: 20%;
+}
+
+.footer3 p{
+    color: white;
+    opacity: 0.4;
+    font-size: 0.8rem;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+.footer4{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding-bottom: 80px;
+    gap: 20px;
+    padding-top: 50px;
+}
+
+.footer4 img{
+    opacity: 0.5;
+    height: 40px;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+.presentation-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90vw;
+    height: 50vh; 
+    background-color: white;
+    margin: 5vh auto;
+    box-shadow: 0 0.5vh 1vh rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+}
+
+.presentation-container::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0.5vw;
+    background-color: #cb1517;
+}
+
+.text-content {
+    width: 55%;
+    padding: 6vh 6vw;
+}
+
+.text-content h4 {
+    color: black;
+    opacity: 0.6;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.text-content h1 {
+    font-size: 2rem;
+    margin: 2vh 0;
+    font-weight: 400;
+}
+
+.text-content p {
+    font-size: 1.3vw;
+    font-weight: 200;
+    color: black;
+}
+
+.text-content a {
+    display: inline-block;
+    margin-top: 2vh;
+    font-size: 1.2vw;
+    color: #cb1517;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.image-content {
+    width: 55%;
+    height: 100%;
+}
+
+.image-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

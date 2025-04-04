@@ -1,0 +1,436 @@
+*{
+    font-family: "Saira", sans-serif;
+    font-optical-sizing: auto;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.footer1{
+    background-color: black;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.footer1 h1{
+    opacity: 0.5;
+}
+
+.df1{
+    font-size: 2.3rem;
+    font-weight: 900;
+}
+
+.df2{
+    font-size: 1.9rem;
+    font-weight: 200;
+    word-spacing: 3px;
+}
+
+.footer2 {
+    background-color: black;
+    display: flex;
+    gap: 60px; 
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.footer2 a {
+    text-decoration: none;
+}
+
+.footer2 p {
+    padding: 0;
+    margin: 0; 
+    color: white;
+    opacity: 0.5;
+    font-size: 0.7rem;
+}
+
+.footer3{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 3%;
+    padding-left:  20%;
+    padding-right: 20%;
+}
+
+.footer3 p{
+    color: white;
+    opacity: 0.4;
+    font-size: 0.8rem;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+.footer4{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding-bottom: 80px;
+    gap: 20px;
+    padding-top: 50px;
+}
+
+.footer4 img{
+    opacity: 0.5;
+    height: 40px;
+}
+
+.front {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+}
+
+.front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.front div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+.front p{
+    font-weight: 900;
+    font-size: 11rem;
+}
+
+.fearless{
+    height: 100vh;
+    margin-left: 6vw;
+    margin-right: 60vw;
+    margin-top: 9%;
+    margin-bottom: 17%;
+    text-align: left;
+}
+
+.fearless p{
+    font-size: 5rem;
+    opacity: 0.76;
+    font-weight: 600;
+}
+
+.wanted{
+    height: 30vh;
+    margin-bottom: 40%;
+    width: 40vw;
+    font-weight: 300;
+    margin-left: 55vw;
+    margin-right: 5vw;
+    font-size: 3.2rem;
+}
+
+.desert{
+    width: auto;
+    height: 110vh;
+    overflow: hidden;
+    margin-bottom: 20%;
+}
+
+.desert1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sc1 {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10%;
+}
+
+.sc2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.sc2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    transition: background 1.7s ease-in-out;
+}
+
+.overlay.darken {
+    background: rgba(0, 0, 0, 0.5); 
+}
+
+.scroll-text {
+    position: absolute;
+    top: 50%;
+    left: -100%;
+    transform: translateY(-50%);
+    width: 60%;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    transition: left 2.7s ease, opacity 0.5s;
+    font-weight: 300;
+    opacity: 0;
+}
+
+.scroll-text.visible {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 100px 20px;
+    min-height: 100vh;
+}
+
+.left h1 {
+    font-size: 3rem;
+    font-weight: 200;
+}
+
+.right {
+    width: 60%;
+}
+
+.text-block {
+    background: black;
+    color: white;
+    padding: 40px;
+    border-bottom: 10px solid white;
+    opacity: 0;
+    transform: translateX(100px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out , background-color 0.44s ease-out , color 0.44s ease-out;
+}
+.text-block h2 {
+    font-size: 1.8rem;
+}
+
+.text-block p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.text-block.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.t11:hover{
+    background-color: #008C45;
+    color: black;
+}
+
+.t12:hover{
+    background-color: white;
+    color: black;
+}
+
+.t13:hover{
+    background-color: #CD212A;
+    color: black;
+}
+
+.yellow1{
+    width: 100vw;
+    height: 100vh;
+    margin-top: 13%;
+    overflow: hidden;
+    background-color: black;
+    margin-bottom: 24%;
+}
+
+.ys1 img{
+    height: 100vh;
+    width: 85vw;
+    margin-left: 7.5vw;
+    margin-right: 7.5vw;
+    object-fit: cover;
+}
+
+.colors {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 80vh;
+    width: 80vw;
+    margin: 10% 10%;
+    gap: 10px;
+}
+
+.y11 {
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+}
+
+.y11 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.y11:hover img {
+    transform: scale(1.1);
+    box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.2);
+}
+
+.choices {
+    display: flex;
+    justify-content: space-evenly; 
+    width: 96%; 
+    margin-bottom: 14%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.choice {
+    text-align: center; 
+  }
+  
+  .title {
+    font-size: 3rem;
+    margin-bottom: 2%; 
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .price {
+    font-size: 1rem;
+  }
+
+#blue1:hover{
+    background-color:rgb(0, 0, 110);
+    color: white;
+    font-weight: 600;
+}
+
+#yellow1:hover{
+    font-weight: 600;
+    background-color: #edd628 ;
+}
+
+#red1:hover{
+    font-weight: 600;
+    background-color: rgb(196, 9, 9);
+    color: white;
+}
+
+.card1 {
+    width: 400px;
+    aspect-ratio: 1 / 0.7;
+    border-radius: 8px;
+    position: relative;
+    cursor: pointer;
+}
+
+.card1 .imgbox {
+    width: 100%;
+    height: 100%;
+}
+
+.card1 .imgbox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 90%;
+    transition: 0.5s ease-in-out;
+}
+
+.card1::after {
+    text-align: center;
+    width: auto;
+    position: absolute;
+    inset: 0;
+    color: white;
+    border: 2px solid white;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px;
+    box-sizing: border-box; 
+}
+
+.avg1::after{
+    content: "LED “X” headlamp.";
+}
+.avg2::after{
+    content: "Ergonomic, padded, and ride-ready.";
+}
+.avg3::after{
+    content: "Brembo brakes with cornering ABS.";
+}
+.avg4::after{
+    content: "4.3 inch TFT with connectivity.";
+}
+
+.card1:hover img {
+    filter: grayscale(1) brightness(0.4);
+}
+
+.card1:hover::after {
+    opacity: 1;
+    inset: 20px;
+}
+
+.content2 {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content2 p, .content2 h2 {
+    color: white;
+}
+
+.run {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 23%;
+}

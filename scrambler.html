@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Orbitron:wght@400..900&family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Saira:ital,wght@0,100..900;1,100..900&family=Zen+Dots&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrambler</title>
+    <link rel="stylesheet" href="scramblercss.css">
+</head>
+<body>
+
+
+    <section class="front">
+        <img src="https://wallpapercave.com/wp/wp15196583.webp" alt="">
+        <div>
+            <p>THE DUCATI <span id="scram">SCRAM</span>BLER</p>
+            <!-- <h1>HERE TO MAKE A STATEMENT</h1> -->
+        </div>
+    </section>
+
+    <section class="fearless">
+        <p>WILD FEARLESS ENTHRALLING AUDACIOUS UNAPOLOGETIC UNTAMED RELENTLESS</p>
+    </section>
+
+    <section class="wanted">
+        <p>Ever wanted a bike that feels like all of this? A bike that just <i><b>gets</b></i> you there?</p>
+    </section>
+
+    <section class="desert">
+        <div class="desert1">
+            <img src="scrambler-IMG-VID/scram-freedom.png" alt="">
+        </div>
+    </section>
+
+    <section class="sc1">
+        <div class="sc2">
+            <img src="https://imotorbike-wp-media.s3.ap-southeast-1.amazonaws.com/2024/05/RR_24_I_1_5ee477ed0b-1-1-2048x1229.jpg" alt="">
+            <div class="overlay"></div> <!-- Darkening effect -->
+            <div class="scroll-text">
+                <p>At Ducati, we set out to redefine freedom on two wheels. The Scrambler isn’t just a motorcycle—it’s a statement of boldness, versatility, and pure exhilaration.</p>
+                <p>Designed for those who crave adventure, it blends classic heritage with modern performance, delivering an unrivaled riding experience on any terrain.</p>
+                <p>Whether carving through city streets or conquering the open road, the Scrambler embodies the spirit of fearless exploration.</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const text = document.querySelector(".scroll-text");
+            const overlay = document.querySelector(".overlay");
+
+            window.addEventListener("scroll", function () {
+                const textPosition = text.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+
+                if (textPosition < windowHeight * 0.8) {
+                    text.classList.add("visible");
+                    overlay.classList.add("darken");
+                } else {
+                    text.classList.remove("visible");
+                    overlay.classList.remove("darken");
+                }
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const textBlocks = document.querySelectorAll(".text-block");
+
+            function checkScroll() {
+                textBlocks.forEach((block, index) => {
+                    const position = block.getBoundingClientRect().top;
+                    const windowHeight = window.innerHeight;
+
+                    if (position < windowHeight * 0.8) {
+                        setTimeout(() => {
+                            block.classList.add("visible");
+                        }, index * 300); // Delays each animation slightly
+                    }
+                });
+            }
+
+            window.addEventListener("scroll", checkScroll);
+            checkScroll(); // Run once in case elements are already in view
+        });
+    </script>
+
+    <section class="container">
+        <div class="left">
+            <h1>PURE <br> SCRAMBLER <br> ESSENCE</h1>
+        </div>
+        <div class="right">
+            <div class="text-block hidden t11" id="text1">
+                <h2>TIMELY BLACK STYLE</h2>
+                <p>The Icon Dark embraces minimalism with a bold, all-black design. From the matte black painted fuel tank to the black-painted plastics on the mudguard, fuel tank cover, and headlight covers, every element exudes understated elegance.</p>
+            </div>
+            <div class="text-block hidden t12" id="text2">
+                <h2>LIGHTWEIGHT & NIMBLE</h2>
+                <p>Designed for easy handling, the Icon Dark boasts a lightweight chassis and engine, making it agile and responsive in any riding condition. The Nightshift/Full Throttle tail, anodized handlebar clamp, and full black timing belt covers enhance its stripped-down aesthetic, keeping it light yet robust.</p>
+            </div>
+            <div class="text-block hidden t13" id="text3">
+                <h2>MODERN TECH</h2>
+                <p>Equipped with cutting-edge technology, including a 4.3” TFT display, Ride-by-Wire, and modern rider aids, the Icon Dark ensures a smooth, safe, and connected ride. The X-Shaped DRL and full LED lighting system provide excellent visibility, adding a touch of modernity to its classic design.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="yellow1">
+        <div class="ys1">
+            <img src="scrambler-IMG-VID/yellow-test2.png" alt="">
+        </div>
+    </section>
+
+    
+
+    <section class="run">
+        <div class="card1 avg1">
+            <div class="imgbox">
+                <img src="scrambler-IMG-VID/nightshift.jpg" alt="">
+            </div>
+            <div class="content2">
+           
+            </div>
+        </div>
+        <div class="card1 avg2">
+            <div class="imgbox">
+                <img src="scrambler-IMG-VID/scrambler-seat.jpg" alt="">
+            </div>
+            <div class="content2">
+           
+            </div>
+        </div>
+        <div class="card1 avg3">
+            <div class="imgbox">
+                <img src="scrambler-IMG-VID/scram-brakes.png" alt="">
+            </div>
+            <div class="content2">
+           
+            </div>
+        </div>
+        <div class="card1 avg4">
+            <div class="imgbox">
+                <img src="scrambler-IMG-VID/Ducati_Scrambler_TFT_Screen_4797b7cd18.jpg" alt="">
+            </div>
+            <div class="content2">
+           
+            </div>
+        </div>
+    </section>
+
+    <div class="colors">
+        <div class="y11">
+            <img src="https://wallpapercave.com/wp/wp15196642.webp" alt="Bike 1">
+
+        </div>
+        <div class="y11">
+            <img src="https://www.v-twins.com.au/cdn/shop/files/GDS_2294_UC450537.jpg?v=1724122036&width=1214" alt="Bike 2">
+
+        </div>
+        <div class="y11">
+            <img src="https://wallpapercave.com/wp/wp15196596.webp" alt="Bike 3">
+
+        </div>
+    </div>
+
+    <div class="choices">
+        <div class="choice">
+          <div class="title " id="blue1">Midnight Blue</div>
+          <div class="price">Starting at ₹12.95 Lacs (Ex-Showroom India)</div>
+        </div>
+        <div class="choice">
+          <div class="title " id="yellow1">Sunfire</div>
+          <div class="price">Starting at ₹13.83 Lacs (Ex-Showroom India)</div>
+        </div>
+        <div class="choice ">
+          <div class="title" id="red1">Sovereign</div>
+          <div class="price">Starting at ₹15.29 Lacs (Ex-Showroom India)</div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="footer1">
+        <div class="flex">
+            <h1><span class="df1"><i>DUCATI </i></span> <span class="df2">|  Member of the Audi Group</span></h1>
+        </div>
+    </section>
+
+    <section class="footer2 , flex">
+        <a href="#">
+            <p>TERMS OF USE</p>
+        </a>
+        <a href="#">
+            <P>PRIVACY INFORMATION</P>
+        </a>
+        <a href="#">
+            <P>COOKIES INFORMATION</P>
+        </a>
+    </section>
+    
+    <section class="footer3 , flex">
+        <p>Copyright © 2023 Ducati Motor Holding S.p.A – A Sole Shareholder Company - A Company subject to the Management and Coordination activities of AUDI AG. All rights reserved. VAT 05113870967</p>
+    </section>
+
+    <section class="footer4">
+        <a href="https://x.com/DucatiMotor?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+            <img id = "f41" src="images1/twitter.png" alt="">
+        </a>
+        <a target="_blank" href="https://www.facebook.com/Ducati/">
+            <img id = "f42" src="images1/fb1.png" alt="">
+        </a>
+        <a target="_blank" href="https://www.youtube.com/@ducati">
+            <img id = "f43" src="images1/free-vector-youtube-icon-logo-black-white_901408-456.png" alt="">
+        </a>
+        <a target="_blank" href="https://www.linkedin.com/company/ducati-motor-holding/">
+            <img id = "f44" src="images1/linkedin200.png" alt="">
+        </a>
+        <a target="_blank" href="https://www.instagram.com/ducati/?hl=en">
+            <img id = "f45" src="images1/insta2.png" alt="">
+        </a>
+    </section>
+    
+</body>
+</html>
